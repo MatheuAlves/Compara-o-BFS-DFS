@@ -49,6 +49,7 @@ Para avaliar os algoritmos, foram medidas as seguintes métricas:
 <div style="text-align: center;">
     <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/DFS.png" alt="DFS">
 </div>
+
 ---
 
 ## 📈 3. Resultados e Análise Comparativa
@@ -96,8 +97,5 @@ Ambos os algoritmos foram eficazes, mas apresentaram vantagens e desvantagens es
 - **DFS** apresentou menor consumo de memória e tempo de execução ligeiramente melhor no exemplo dado, mas não garante optimalidade.
 
 ### Sugestões de Melhoria:
-1. **Algoritmos Heurísticos (A\*)**: Implementar o A* para combinar menor caminho e menor uso de memória.
-2. **Busca Limitada em Profundidade**: Uma variante de DFS com limite de profundidade pode reduzir o tempo e evitar caminhos muito longos.
-3. **Memória Auxiliar para DFS**: Usar uma pilha iterativa com limite de profundidade pode controlar o consumo de memória em DFS.
-
-Em resumo, ambos são úteis em diferentes contextos, e a escolha depende das necessidades de completude, optimalidade e tamanho do problema.
+1. **Usar Algoritmos Mais Inteligentes (como o A\*)**: O A* é uma opção interessante porque combina o melhor dos dois mundos: ele busca o menor caminho, como o BFS, mas tenta ser mais rápido e usar menos memória, aproveitando informações adicionais sobre o problema.
+2. **Limitar a Profundidade no DFS**: Uma ideia é ajustar o DFS para que ele só vá até uma certa profundidade antes de voltar. Isso pode economizar tempo e evitar que o algoritmo explore caminhos desnecessariamente longos.
