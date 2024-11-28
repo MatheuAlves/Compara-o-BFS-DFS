@@ -10,7 +10,7 @@ O trabalho apresentado tem como objetivo implementar e comparar o desempenho de 
 
 ## 🧑‍💻 1. Implementação
 
-Para resolver o problema de busca por um caminho em uma matriz com movimentos de salto de duas casas, foram implementados os algoritmos de **Busca em Largura (BFS)** e **Busca em Profundidade (DFS)**. Cada célula da matriz representa um nó, e os movimentos possíveis (esquerda, direita, cima, baixo) com salto de duas casas representam as arestas. Abaixo uma breve descrição de cada algoritmo:
+Para resolver o problema de busca por um caminho em uma matriz, foram implementados os algoritmos de **Busca em Largura (BFS)** e **Busca em Profundidade (DFS)**. Cada célula da matriz representa um nó. As casas que não podem ser acessadas contem uma barreira, que foi implementada específicando os pontos onde o movimento não era possível. Abaixo uma breve descrição de cada algoritmo:
 
 - **BFS**: Explora o grafo em largura, visitando todos os vizinhos de um nó antes de avançar para o próximo nível. Isso garante que o primeiro caminho encontrado é o mais curto em termos de movimentos, sendo ótimo em grafos não ponderados.
   
@@ -29,27 +29,28 @@ Para avaliar os algoritmos, foram medidas as seguintes métricas:
 ### Resultados das Medições:
 
 #### BFS
-- **Tempo de Execução**: 0.001003 segundos
-- **Consumo de Memória**: 4.55 KB
+- **Tempo Médiode Execução**: 0.0016772000 segundos
+- **Consumo Médio de Memória**: 2.07 KB; Pico: 2.42 KB
 - **Completude**: O algoritmo é completo (sempre encontra o caminho se existir)
 - **Optimalidade**: O caminho encontrado é o menor possível
 
+
 #### DFS
-- **Tempo de Execução**: 0.000000 segundos
-- **Consumo de Memória**: 0.80 KB
+- **Tempo Médio de Execução**: 0.0001220000 segundos
+- **Consumo Médio de Memória**: 1.39 KB; Pico: 1.74 KB
 - **Completude**: O algoritmo é completo (se existir caminho, ele encontrará)
-- **Optimalidade**: DFS não garante a melhor solução (menor caminho)
+- **Optimalidade**: DFS não garante a melhor solução (menor caminho) por causa da profundidade
 
 ---
 
 ## 📈 3. Resultados e Análise Comparativa
 
-| Métrica             | BFS                   | DFS                    |
-|---------------------|-----------------------|------------------------|
-| Tempo de Execução   | 0.001003 segundos     | 0.000000 segundos      |
-| Consumo de Memória  | 4.55 KB               | 0.80 KB                |
-| Completude          | Completo              | Completo               |
-| Optimalidade        | Ótimo (menor caminho) | Não garante menor caminho |
+| Métrica             | BFS                   | DFS                      |
+|---------------------|-----------------------|--------------------------|
+| Tempo de Execução   | 0.0016772000 segundos | 0.0001220000 segundos    |
+| Consumo de Memória  | 2.07 KB; Pico: 2.42 KB| 1.39 KB; Pico: 1.74 KB   |
+| Completude          | Completo              | Completo                 |
+| Optimalidade        | Ótimo (menor caminho) | Não garante menor caminho|
 
 ### Análise dos Resultados
 
@@ -65,8 +66,8 @@ Para avaliar os algoritmos, foram medidas as seguintes métricas:
    - Ambos são completos para o problema, ou seja, encontram um caminho, se houver, da posição inicial até a final.
 
 4. **Optimalidade**:
-   - O BFS é ótimo e encontra o menor caminho em termos de passos, ideal para problemas de menor caminho.
-   - O DFS não garante optimalidade e pode encontrar caminhos mais longos.
+   - O BFS é ótimo e encontra o menor caminho em termos de passos.
+   - O DFS não garante optimalidade e pode encontrar caminhos mais longos pela forma de percorrer a matriz por profundidade.
 
 ### Discussão do Desempenho em Diferentes Condições
 
