@@ -70,7 +70,7 @@ def bfs(matriz, inicio, fim, movimentos):
         pos_atual = fila.popleft()
         
         if pos_atual == fim:
-            print("BFS Resolvido!")
+            print('BFS Resolvido!')
             fim_tempo_bfs = perf_counter()
             tempo_total_bfs = fim_tempo_bfs - inicio_tempo_bfs
             
@@ -102,7 +102,7 @@ def bfs(matriz, inicio, fim, movimentos):
                     fila.append(prox_pos)
                     pais[prox_pos] = pos_atual 
                     
-    print("Matriz não tem solução!")
+    print('Matriz não tem solução!')
     tracemalloc.stop()
     return None
 
@@ -110,7 +110,7 @@ def imprime_bfs(caminho, caminho_valores, tempo_bfs, memoria, pico_memoria):
     print(f'Caminho BFS: {caminho}')
     print(f'Caminho BFS: {caminho_valores}')
     print(f'Tempo total BFS: {tempo_bfs:.10f}')
-    print(f"Consumo de Memória BFS: {memoria / 1024:.2f} KB; Pico: {pico_memoria / 1024:.2f} KB")
+    print(f'Consumo de Memória BFS: {memoria / 1024:.2f} KB; Pico: {pico_memoria / 1024:.2f} KB')
 
 def dfs(matriz, inicio, fim, movimentos):
     inicio_tempo_dfs = perf_counter()
@@ -124,7 +124,7 @@ def dfs(matriz, inicio, fim, movimentos):
         pos_atual = pilha.pop()
         
         if pos_atual == fim:
-            print("DFS Resolvido!")
+            print('DFS Resolvido!')
             fim_tempo_dfs = perf_counter()
             tempo_total_dfs = fim_tempo_dfs - inicio_tempo_dfs
             
@@ -154,7 +154,7 @@ def dfs(matriz, inicio, fim, movimentos):
                     pilha.append(prox_pos)
                     pais[prox_pos] = pos_atual 
                     
-    print("Matriz não tem solução!")
+    print('Matriz não tem solução!')
     tracemalloc.stop()
     return None
 
@@ -162,10 +162,10 @@ def imprime_dfs(caminho, caminho_valores, tempo_dfs, memoria, pico_memoria):
     print(f'Caminho DFS: {caminho}')
     print(f'Caminho DFS: {caminho_valores}')
     print(f'Tempo total DFS: {tempo_dfs:.10f}')
-    print(f"Consumo de Memória DFS: {memoria / 1024:.2f} KB; Pico: {pico_memoria / 1024:.2f} KB")
+    print(f'Consumo de Memória DFS: {memoria / 1024:.2f} KB; Pico: {pico_memoria / 1024:.2f} KB')
 
-print(f"Início: {matriz[inicio[0]][inicio[1]]}")
-print(f"Fim: {matriz[fim[0]][fim[1]]}")
+print(f'Início: {matriz[inicio[0]][inicio[1]]}')
+print(f'Fim: {matriz[fim[0]][fim[1]]}')
 
 
 print('-----------BFS-----------')
