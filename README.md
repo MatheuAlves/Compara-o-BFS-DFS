@@ -33,14 +33,22 @@ Para avaliar os algoritmos, foram medidas as seguintes métricas:
 - **Consumo Médio de Memória**: 2.07 KB; Pico: 2.42 KB
 - **Completude**: O algoritmo é completo (sempre encontra o caminho se existir)
 - **Optimalidade**: O caminho encontrado é o menor possível
+<br>
 
+<div style="text-align: center;">
+    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/BFS.png" alt="BFS">
+</div>
 
 #### DFS
 - **Tempo Médio de Execução**: 0.0001220000 segundos
 - **Consumo Médio de Memória**: 1.39 KB; Pico: 1.74 KB
 - **Completude**: O algoritmo é completo (se existir caminho, ele encontrará)
 - **Optimalidade**: DFS não garante a melhor solução (menor caminho) por causa da profundidade
+<br>
 
+<div style="text-align: center;">
+    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/DFS.png" alt="DFS">
+</div>
 ---
 
 ## 📈 3. Resultados e Análise Comparativa
