@@ -10,7 +10,7 @@ O trabalho apresentado tem como objetivo implementar e comparar o desempenho de 
 
 ## 🧑‍💻 1. Implementação
 
-Para resolver o problema de busca por um caminho em uma matriz, foram implementados os algoritmos de **Busca em Largura (BFS)** e **Busca em Profundidade (DFS)**. Cada célula da matriz representa um nó. As casas que não podem ser acessadas contem uma barreira, que foi implementada específicando os pontos onde o movimento não era possível. Abaixo uma breve descrição de cada algoritmo:
+Para resolver o problema de busca por um caminho em uma matriz, foram implementados os algoritmos de **Busca em Largura (BFS)** e **Busca em Profundidade (DFS)**. Cada célula da matriz representa um nó. As casas que não podem ser acessadas contem uma barreira que foi implementada especificando os pontos onde o movimento não era possível. Abaixo uma breve descrição de cada algoritmo:
 
 - **BFS**: Explora o grafo em largura, visitando todos os vizinhos de um nó antes de avançar para o próximo nível. Isso garante que o primeiro caminho encontrado é o mais curto em termos de movimentos, sendo ótimo em grafos não ponderados.
   
