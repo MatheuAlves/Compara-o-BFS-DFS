@@ -13,8 +13,15 @@ O trabalho apresentado tem como objetivo implementar e comparar o desempenho de 
 Para resolver o problema de busca por um caminho em uma matriz, foram implementados os algoritmos de **Busca em Largura (BFS)** e **Busca em Profundidade (DFS)**. Cada célula da matriz representa um nó. As casas que não podem ser acessadas contem uma barreira que foi implementada especificando os pontos onde o movimento não era possível. Abaixo uma breve descrição de cada algoritmo:
 
 - **BFS**: Explora o grafo em largura, visitando todos os vizinhos de um nó antes de avançar para o próximo nível. Isso garante que o primeiro caminho encontrado é o mais curto em termos de movimentos, sendo ótimo em grafos não ponderados.
-  
+  <div style="text-align: center;">
+    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/BFS.png" alt="BFS">
+</div>
+
 - **DFS**: Explora o grafo em profundidade, tentando avançar o máximo possível por um caminho antes de retroceder. DFS não garante o menor caminho, mas é útil para explorar todas as rotas possíveis. Em termos de memória, DFS geralmente utiliza menos espaço em grafos grandes.
+
+<div style="text-align: center;">
+    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/DFS.png" alt="DFS">
+</div>
 
 ---
 
@@ -35,20 +42,12 @@ Para avaliar os algoritmos, foram medidas as seguintes métricas:
 - **Optimalidade**: O caminho encontrado é o menor possível
 <br>
 
-<div style="text-align: center;">
-    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/BFS.png" alt="BFS">
-</div>
-
 #### DFS
 - **Tempo Médio de Execução**: 0.0001220000 segundos
 - **Consumo Médio de Memória**: 1.39 KB; Pico: 1.74 KB
 - **Completude**: O algoritmo é completo (se existir caminho, ele encontrará)
 - **Optimalidade**: DFS não garante a melhor solução (menor caminho) por causa da profundidade
 <br>
-
-<div style="text-align: center;">
-    <img src="https://github.com/MatheuAlves/Trabalho-1-IA-Compara-o-BFS-DFS/raw/main/DFS.png" alt="DFS">
-</div>
 
 ---
 
